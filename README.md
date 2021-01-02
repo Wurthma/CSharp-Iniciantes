@@ -11,6 +11,7 @@ Em construção...
 
 # Lista de exercícios:
 
+0. Instação do Dotnet 5
 1. Como usar VS Code, git e github
 2. Calculadora
 3. Editor de textos básico
