@@ -15,6 +15,6 @@ Ele que iremos utilizar para desenvolver os exercícios, então seu primeiro pas
 1. Baixe o VS Code pelo link: https://code.visualstudio.com/
 2. Após instalado, clique no botão de extensões do VS Code:
 
-- ![Vs Code Extension Button](../Resources/Imgs/01_VsCode_Btn_Extension.png)
+    ![Vs Code Extension Button](../Resources/Imgs/01_VsCode_Btn_Extension.png)
 
 3. Localize a extensão do C# e faça a instalação.
