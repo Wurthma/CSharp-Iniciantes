@@ -14,7 +14,9 @@ Após a instalação podemos verificar se o dotnet foi instalado com sucesso ver
 2. `dotnet new`: Cria um novo projeto, arquivo de configuração ou solução com base no modelo especificado.
 
     Exemplo:
+    
     `dotnet new console -o MinhaAplicacaoConsole`: cria um novo projeto de console no diretório atual com o nome "MinhaAplicacaoConsole"
+    
     `dotnet new webAPI -o MinhaAPI`: cria um novo projeto API no diretório atual com o nome "MinhaAPI"
 
 3. `dotnet build`: Compila um projeto e todas as suas dependências.
