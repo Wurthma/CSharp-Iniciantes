@@ -45,7 +45,7 @@ Criaremos um projeto simples em C# e faremos o controle de versão desse projeto
 
 2. Acesse a pasta do projeto criado acima com o comando `cd ControleDeVersaoComGit`
 3. Por fim, abra o projeto no VS code usando o comando `code .`, se preferir, pode usar o próprio VS Code para abrir a pasta do projeto no menu **File > Open Folder...**
-4. Quando a mensagem abaixo for exibida, clique em sim. Caso não saiba do que se trata, leia a introdução.
+4. Quando a mensagem abaixo for exibida, clique em sim.
 
     ![Vs Code Required Assets](../Resources/Imgs/01_VsCode_required_assets.png)
 
