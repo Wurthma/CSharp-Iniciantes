@@ -102,6 +102,8 @@ Antes de seguir os passos baixo, crie uma conta no github.com, se ainda não tiv
 2. Coloque o nome "ControleDeVersaoComGit"
 3. Coloque a descrição que achar mais adequada, deixe o repositório como público e deixe o restante das opções desmarcadas.
 
+#### Push
+
 Para subirmos o nosso projeto para o github, no repositório que acabamos de criar, utilizaremos o comando `git push`, mas antes utilizaremos os comandos abaixo pra configura-lo:
 
 1. git remote add ControleDeVersaoComGit <url>
@@ -124,6 +126,10 @@ Para praticar, vamos realizar mais uma alteração:
 3. Use o comando `git commit -m "Adicionada linha com versão da aplicação."` para fazer o commit da alteração.
 4. Como já fizemos a configuração você pode usar agora apenas o comando `git push`.
 5. Atualize seu repositório no github e você poderá observar as alterações. Entre também no histórico do seu repositório no github e você visualizará todos seus commits. Navegue pelo histórico e tente entendê-lo.
+
+#### Pull
+
+Com o comando `git pull` você pode atualizar seu projeto local com alterações realizadas por outros desenvolvedores.
 
 #### Clonando projetos existentes
 
