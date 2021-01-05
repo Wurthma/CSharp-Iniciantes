@@ -24,5 +24,5 @@
 
 # Desafios
 
-1- Crie uma nova opção na calculadora (opção número 5 do menu) que retorne o resto da divisão.
-2- Crie uma nova opção na calculadora (opção número 6 do menu) que retorne o resultado da potenciação de uma determinada base pelo seu expoente. Exemplo **2³ = 8**.
+1. Crie uma nova opção na calculadora (opção número 5 do menu) que retorne o resto da divisão.
+2. Crie uma nova opção na calculadora (opção número 6 do menu) que retorne o resultado da potenciação de uma determinada base pelo seu expoente. Exemplo **2³ = 8**.
