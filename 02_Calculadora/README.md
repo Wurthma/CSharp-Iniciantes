@@ -1,6 +1,6 @@
 ### Calculadora simples
 
-**Objetivo:** usando uma aplicação do tipo console do dotnet, criar uma calculadora simples que terá as operações de soma, subtração, multiplicação e divisão.
+**Objetivo:** usando uma aplicação do tipo console do dotnet, criar uma calculadora simples que terá as operações de soma, subtração, multiplicação e divisão. Faça o controle de versionamento da sua aplicação com git e suba a mesma para o github.
 
 **Requisitos:** 
 - Ao entrar na calculadora o usuário deverá ter um menu com as opções 1, 2, 3, 4 e 0. Sendo elas:
@@ -21,6 +21,10 @@
 	7. Aplicação retorna para o menu;
 
 - Para a operação de divisão, validar se o divisor é 0. Se verdadeiro deve ser exibida a mensagem "Não é possível dividir por zero."
+
+**Opcional**
+- Fazer o controle de versionamento da sua aplicação usando git;
+- Subir a aplicação para um repositório do github.
 
 # Desafios
 
