@@ -2,7 +2,13 @@
 
 **Objetivo:** usando uma aplicação do tipo console do dotnet, criar uma calculadora simples que terá as operações de soma, subtração, multiplicação e divisão. Faça o controle de versionamento da sua aplicação com git e suba a mesma para o github.
 
-**Requisitos:** 
+## Novos conceitos ou funcionalidades desse exercício
+
+Nossa primeira aplicação é bem simples e se você já tem conhecimentos em lógica de programação, algoritmos e alguma linguagem de programação não terá problemas para desenvolver a aplicação.
+Faremos uso de operadores condicionais, estrutura condicional 'switch', criação e chamada de métodos simples.
+
+## Requisitos
+
 - Ao entrar na calculadora o usuário deverá ter um menu com as opções 1, 2, 3, 4 e 0. Sendo elas:
 
 	1 - Somar
