@@ -22,4 +22,5 @@ Tentei deixar uma evolução fluída para os exercícios, com uma progressão em
 0. [Instalação do Dotnet](/00_Instalacao_Dotnet "Instalação do Dotnet")
 1. [Como usar VS Code, git e github](/01_Introducao_VSCode_Git "Como usar VS Code, git e github")
 2. [Calculadora](/02_Calculadora "Calculadora")
-3. [Jogar dados](/03_JogarDados "Jogar dados")
+3. [Soma e média](/03_SomaMedia "Soma e média")
+4. [Jogar dados](/04_JogarDados "Jogar dados")
