@@ -8,7 +8,7 @@ Usaremos nesse exercício a classe DateTime do dotnet então antes ou durante o 
 Tente desenvolver o exercício criando uma classe chamada "DataConfiguracao" (você pode usar outro nome se preferir) a classe deverá conter os métodos responsáveis por configurar o formato escolhido, método para aplicar o formato da data, método para exibir o cabeçalho com a data no formato específicado, etc.
 
 **Estude:**
-- Classes, métodos e propriedades.
+- Classes, métodos, propriedades e construtores.
 - Modificadores de acesso: público, privado e protegido.
 - Retornando valores nos métodos.
 - Recebendo valores em atributos de métodos.
