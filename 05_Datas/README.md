@@ -52,3 +52,4 @@ Nascimento de Alan Turing, matemático e criptoanalista britânico que é consid
 # Desafios
 
 1. Estude novos formatos de datas e aplique mais opções ao menu de escolha de formato de data.
+2. Estude a classe `System.Globalization.CultureInfo` e aplique novos formatos utilizando ela.
