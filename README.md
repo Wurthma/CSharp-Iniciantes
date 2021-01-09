@@ -24,3 +24,4 @@ Tentei deixar uma evolução fluída para os exercícios, com uma progressão em
 2. [Calculadora](/02_Calculadora "Calculadora")
 3. [Soma e média](/03_SomaMedia "Soma e média")
 4. [Jogar dados](/04_JogarDados "Jogar dados")
+5. [Datas](/05_Datas "Datas")
