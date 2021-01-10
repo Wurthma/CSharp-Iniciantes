@@ -1,6 +1,6 @@
 ### Jogo da Forca
 
-**Objetivo:** usando uma aplicação do tipo console do dotnet, criar um jogo da forca que irá ler uma lista de nomes de filmes, nomes de jogos (vídeo game) e países.
+**Objetivo:** usando uma aplicação do tipo console do dotnet, criar um jogo da forca que irá ler uma lista de nomes de filmes, nomes de jogos (vídeo game) e países. Com essa aplicação você poderá evoluir seus conhecimentos sobre manipulação de strings e leitura e escrita de arquivos.
 
 ## Novos conceitos ou funcionalidades desse exercício
 
@@ -21,6 +21,13 @@ Caso não conheça os conceitos de orientação a objetos, pause um pouco a exec
 - Mostre na tela também, a categoria sorteada e a quantidade de letras da palavra. Além da quantidade de letras, inicialmente todas as letras da palavra devem ser substituídas por underline (_). Exemplo:
 	- Se a palavra for o filme Matrix, deverá ser exibido 6 underline no lugar da palavra.
 	- Ao acertar a letra A, deverá ser exibido apenas a letra a na posição correta.
+	
+- As palavras devem ficar armazenadas em um arquivo de texto do tipo CSV que terá a palavra seguido pela categoria, onde Filme = 0, Jogo = 1, e Pais = 2. Segue um exemplo de como cada tipo deve ficar no arquivo:
+	- Matrix;0;
+	- Batman;1;
+	- Brasil;2;
+
+- Se alguma palavra possui letra com acentuação, ela deve ser reconhecida quando o usuário informar sem acentuação, além disso a aplicação não deve diferenciar maiúsculo de minúsculo. Estude como usar o `System.Text.Encoding.CodePages` para remoção de acentos usando o 'ISO-8859-8'.
 
 - A cada tentativa atualize o placar com as pontuações.
 
@@ -33,6 +40,8 @@ Caso não conheça os conceitos de orientação a objetos, pause um pouco a exec
 - Subir a aplicação para um repositório do github.
 - Faça o uso de todos os pilares da programação Orientada a Objetos.
 - Utilize Enumeradores para a categoria das palavras.
+- Estude o tratamento de errors com C# (Exceptions).
+- Estude a biblioteca System.Linq; para facilitar sua manipulação de listas.
 
 # Desafios
 
