@@ -7,7 +7,7 @@
 Usaremos nesse exercício a classe Random do dotnet para simular uma jogada de dados com 6 lados. O random irá possibilitar que tiremos um número aleatório (de 1 a 6 para nosso exemplo).
 Você pode usar loop para esse exercício, estude sobre loops caso não conheça. Poderá também optar por usar **recursão** (o exemplo de consulta usa recursão no método "IniciarRodadas"), recomendo estudar sobre recursão também antes de iniciar o exercício.
 
-## Requisitos
+## Requisitos para desenvolver a aplicação
 
 - Quando o usuário abrir o jogo deverá ser solicitado o nome do primeiro e do segundo jogador. Não será possível jogar com mais do que dois jogadores.
 

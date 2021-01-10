@@ -3,19 +3,23 @@
 Este respositório possui uma lista de exercícios práticos a serem desenvolvidos em C#. Fique a vontade para usar estes exercícios como bem entender.
 Cada pasta desse repositório possui um exercício organizado por nível, sendo o primeiro exercício o mais básico e o último o mais avançado. No entanto, um exercício não é dependente do outro, caso você já possua conhecimentos em lógica de programação e C# poderá decidir por qual começar.
 
-## Requerimentos
+**Nota:** não é objetivo dos exercícios uma abordagem detalhada de cada assunto, aqui você possivelmente encontrará um facilitador para você por a mão na massa e dar um caminho um pouco mais simplificado de qual assunto estudar de for progressiva.
 
-Para realizar estes exercícios você precisa ter o básico de:
+## Requisitos básicos para fazer os exercícios
+
+Sugiro que você já conheça de forma básica:
 
 - Lógica de programação;
 - Algoritmos;
 - Conceitos de orietanção a objetos;
-- SQL e bancos de dados relacionais (a partir do exercícios *A DEFINIR*);
+- SQL e bancos de dados relacionais;
+
+*Os itens acima não são necessários pra todos exercícios.*
 
 ## Evolução dos exercícios
 
 Apenas os primeiros exercícios fazem uma abordagem mais detalhada para que vocês configurem o ambiente e aprendam a usar o básico de Dotnet, VS Code, Git e Github (exercício 0 e 1). O restante dos exercícios são "hands on", vocês teram acesso aos requisitos de uma aplicação e deverão desenvolve-lá, após isso podem comparar com a aplicação de exemplo pronta no repositório ou, se for necessário, podem consultar caso fiquem "travados" em algum ponto do exercício.
-Tentei deixar uma evolução fluída para os exercícios, com uma progressão em que você possa estudar conceitos ou funcionalidades novas a cada exercício. Os exercícios possuem alguns desafios para você praticar mais, se desejar, mas nem todos exemplos tem os desafios para consulta, o intuito é fazer você criar suas próprias soluções.
+Tentei deixar uma evolução fluída para os exercícios, com uma progressão em que você possa estudar conceitos ou funcionalidades novas conforme avança. Os exercícios possuem alguns desafios para você praticar mais, se desejar, mas nem todos exemplos tem os desafios para consulta, o intuito é fazer você criar suas próprias soluções.
 
 # Lista de exercícios:
 
@@ -25,4 +29,6 @@ Tentei deixar uma evolução fluída para os exercícios, com uma progressão em
 3. [Soma e média](/03_SomaMedia "Soma e média")
 4. [Jogar dados](/04_JogarDados "Jogar dados")
 5. [Datas](/05_Datas "Datas")
-5. [ConversaoMoedas](/06_ConversaoMoedas "ConversaoMoedas")
+6. [Conversao Moedas](/06_ConversaoMoedas "Conversao Moedas")
+7. [Jogo da Forca](/07_JogoForca "Jogo da Forca")
+8. [Orientacao Objetos](/08_OrientacaoObjetos "Orientacao Objetos")

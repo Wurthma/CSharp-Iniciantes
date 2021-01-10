@@ -13,7 +13,7 @@ Tente desenvolver o exercício criando uma classe chamada "DataConfiguracao" (vo
 - Retornando valores nos métodos.
 - Recebendo valores em atributos de métodos.
 
-## Requisitos
+## Requisitos da aplicação
 
 - Quando o usuário abrir a aplicação deve ser solicitado qual o formato de data ele deseja visualizar. Deve ser disponibilizada as formatações abaixo:
 1. Utilizar minha configuração de sistema: 08/01/2021 20:48:13 (Este item deve apenas converter a data para string, deixar que o sistema use o formato dele)

@@ -14,7 +14,7 @@ Estudar:
 - Classe ´List´ do Dotnet
 - Loops ´for´ e ´foreach´
 
-## Requisitos
+## Requisitos para desenvolver a aplicação
 
 - Ao abrir a aplicação deverá ser solicitado a quantidade de números que o usuário deseja informar. O número de valores deve ser entre 3 e 10.
 

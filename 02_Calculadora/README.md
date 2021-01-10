@@ -7,7 +7,7 @@
 Nossa primeira aplicação é bem simples e se você já tem conhecimentos em lógica de programação, algoritmos e alguma linguagem de programação não terá problemas para desenvolver a aplicação.
 Faremos uso de operadores condicionais, estrutura condicional 'switch', criação e chamada de métodos simples.
 
-## Requisitos
+## Requisitos para desenvolver a aplicação
 
 - Ao entrar na calculadora o usuário deverá ter um menu com as opções 1, 2, 3, 4 e 0. Sendo elas:
 
