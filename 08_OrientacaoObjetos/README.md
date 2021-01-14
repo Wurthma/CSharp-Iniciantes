@@ -1,12 +1,12 @@
 ### Orientação a Objetos - Drone de Exploração
 
 **Objetivo:** aprender conceitos de **orientação a objetos (OO)**.
-Nos requisitos para fazer os exercícios foi solicitado que você já conhecesse os conceitos de orientação a objetos e aqui você não terá um livro onde aprenderá tudo sobre OO, nosso objetivo maior é por em prática esses conceitos no C#. Se não conhece sobre OO, não desanime, leia artigos, livros, assista vídeos, faça cursos, etc. Conteúdo sobre o assunto não falta!
-Para atingir esse objetivo, a aplicação que vamos utilizar simula o controle de um robo.
+Nos requisitos para fazer os exercícios foi solicitado que você já conhecesse os conceitos de orientação a objetos e aqui você não terá um livro onde aprenderá tudo sobre OO, nosso objetivo maior é pôr em prática esses conceitos no C#. Se não conhece sobre OO, não desanime, leia artigos, livros, assista vídeos, faça cursos etc. Conteúdo sobre o assunto não falta!
+Para atingir esse objetivo, a aplicação que vamos utilizar simula o controle de um drone robô.
 
-*Esse é fácilmente o exercício mais importante da lista, no entanto, um único exercício de orientação a objetos não é o suficiente. Então prátique mais, procure por outros exercícios, retorne aos exercícios que já fez e aplique os novos conceitos que vai aprender.*
+*Esse é facilmente o exercício mais importante da lista, no entanto, um único exercício de orientação a objetos não é o suficiente. Então pratique mais, procure por outros exercícios, retorne aos exercícios que já fez e aplique os novos conceitos que vai aprender.*
 
-Usando uma aplicação do tipo console do dotnet desenvolva uma aplicação **Drone de Exploração** que deve simular o controle de um drone que além das capacidade já conhecidas de um drone comum, terá câmera de alta resolução, 2 braços mecânicos para permitir coletar materiais e 1 recipiênte para armazenar o material coletado. Cada braço terá ferramentas específicas que serão detalhadas nos requisitos e o software também deverá permitir o controle de vôo e movimentação do drone.
+Usando uma aplicação do tipo console do dotnet desenvolva uma aplicação **Drone de Exploração** que deve simular o controle de um drone que além das capacidades já conhecidas de um drone comum, terá câmera de alta resolução, 2 braços mecânicos para permitir coletar materiais e 1 recipiente para armazenar o material coletado. Cada braço terá ferramentas específicas que serão detalhadas nos requisitos e o software também deverá permitir o controle de voo e movimentação do drone.
 
 ## Novos conceitos ou funcionalidades desse exercício
 
@@ -22,20 +22,20 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 - Modificadores de acesso: `public`, `private` e `protected`.
 - Classes, classes abstratas (modificador `abstract`) e classes estáticas (modificador `static`).
 - Construtores.
-- Propriedades, métodos e seus moficicadores.
+- Propriedades, métodos e seus modificadores.
 - Interfaces.
 
-**No código de exemplo há diversos comentários que exemplificam a aplicação de cada um dos pilares. Tente realizar seu exercício e posteriomente consulte o exemplo e faça as melhorias necessários no seu.**
+**No código de exemplo há diversos comentários que exemplificam a aplicação de cada um dos pilares. Tente realizar seu exercício e posteriormente consulte o exemplo e faça as melhorias necessários no seu.**
 
 ## Requisitos da aplicação
 
-- O usuário deve ser capaz de controlar o drone por um menu da aplicação, o menu deve disponibilizar as opções de acordo com as regras específicadas abaixo.
+- O usuário deve ser capaz de controlar o drone por um menu da aplicação, o menu deve disponibilizar as opções de acordo com as regras especificadas abaixo.
 
-- **Controle de vôo:**
+- **Controle de voo:**
 	- Regra: altura máxima deve ser 25 metros do chão;
 	- Regra: altura mínima deve ser 0,5 metros do chão;
-	- Usuário deve ser capaz de informar a qual altura deseja voar, respeitando as regras de vôo acima.
-	- Usuário deve ser capaz de mudar a altura progressivamente também, onde cada comando sobe ou desce 0,5 metros, respeitando as regras de vôo.
+	- Usuário deve ser capaz de informar a qual altura deseja voar, respeitando as regras de voo acima.
+	- Usuário deve ser capaz de mudar a altura progressivamente também, onde cada comando sobe ou desce 0,5 metros, respeitando as regras de voo.
 	
 - **Direção de movimento:**
 	- Usuário deve ser capaz de mudar a direção do drone e 0º à 360º, informando exatamente em qual ângulo deseja ficar direcionado (leve em consideração que o drone sempre começa na direção norte, que representa nosso ângulo zero).
@@ -48,14 +48,14 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 	-Regra: velocidade mínima de movimento deve ser 0 metros por segundos, onde o drone ficará no estado "Sem movimento".
 
 - **Aproximação de objeto:**
-	- Regra: *apróximação de objeto* só pode ser realizada após estar à 0,5 metros do chão e parado (0 mestro/s);
-	- *Apróximação de objeto* deverá ser um comando dado ao drone que aproximara ele lentamente até determinado objeto, com o objetivo de ficar no alcance dos braços mecânicos.
-	- Após realizar a *apróximação de objeto* o drone deve ficar impedido de fazer nova aproximação, ou mudança de altura, direção e deve estar parado (0 mestro/s).
+	- Regra: *aproximação de objeto* só pode ser realizada após estar à 0,5 metros do chão e parado (0 metro/s);
+	- *Aproximação de objeto* deverá ser um comando dado ao drone que aproximara ele lentamente até determinado objeto, com o objetivo de ficar no alcance dos braços mecânicos.
+	- Após realizar a *apróximação de objeto* o drone deve ficar impedido de fazer nova aproximação, ou mudança de altura, direção e deve estar parado (0 metro/s).
 	
 - **Ações dos braços**
 	- Regra: Os braços do drone, quando "em movimento" devem estar no estado "Repouso"
 	- Regra: Os braços do drone, quando "sem movimento" podem passar para o estado "Em atividade"
-	- Regra: Qualquer movimento do braço só pode ser realizado quando o mesmo estiver "Em atividade".
+	- Regra: Qualquer movimento do braço só pode ser realizado quando ele estiver "Em atividade".
 	- **Braço Esquerdo:**
 		- Cotovelo
 			1. Em Repouso
@@ -74,8 +74,8 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 		- Ferramentas do braço direito
 			1. Pegar (mesma do braço esquerdo)
 			2. Armazenar (mesma braço esquerdo)
-			3. Cortar (teroura para cortar objetos)
-			4. Coletar (pá/colher utilizado para objetos não sólidos )
+			3. Cortar (tesoura para cortar objetos)
+			4. Coletar (pá/colher utilizado para objetos não sólidos)
 
 **Opcional**
 - Fazer o controle de versionamento da sua aplicação usando git;
