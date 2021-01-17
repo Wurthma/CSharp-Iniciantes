@@ -44,8 +44,8 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 		- Exemplo 2: se atualmente o drone está na direção 100º, ao usar o comando para ir para direita progressivamente, a direção deve mudar para 105º.
 		
 - **Velocidade de movimento:**
-	-Regra: velocidade máxima de movimento deve ser 15 metros por segundos (estado "Em movimento").
-	-Regra: velocidade mínima de movimento deve ser 0 metros por segundos, onde o drone ficará no estado "Sem movimento".
+	- Regra: velocidade máxima de movimento deve ser 15 metros por segundos (estado "Em movimento").
+	- Regra: velocidade mínima de movimento deve ser 0 metros por segundos, onde o drone ficará no estado "Sem movimento".
 
 - **Aproximação de objeto:**
 	- Regra: *aproximação de objeto* só pode ser realizada após estar à 0,5 metros do chão e parado (0 metro/s);
