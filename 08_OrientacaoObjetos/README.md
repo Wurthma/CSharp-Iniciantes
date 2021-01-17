@@ -48,6 +48,7 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 - **Velocidade de movimento:**
 	- Regra: velocidade máxima de movimento deve ser 15 metros por segundos (estado "Em movimento" para qualquer valor acima de 0).
 	- Regra: velocidade mínima de movimento deve ser 0 metros por segundos, onde o drone ficará no estado "Sem movimento".
+	- Usuário deve ser capaz de mudar a velocidade do drone progressivamente, onde cada comando muda aumenta ou diminui a velocidade de 0,5 em 0,5 metro/s.
 
 - **Aproximação de objeto:**
 	- Regra: *aproximação de objeto* só pode ser realizada após estar à 0,5 metros do chão e parado (0 metro/s);
