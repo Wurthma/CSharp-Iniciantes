@@ -12,5 +12,9 @@ namespace DroneExploracao
         public Drone(float alturaMaximaDeVoo, float alturaMinimaDeVoo) : base(alturaMaximaDeVoo, alturaMinimaDeVoo)
         {
         }
+
+        public float ModificarAlturaDeVoo(EAltura alturaDirecao) => ModificarAlturaDeVoo(alturaDirecao, 0.5f);
+
+        public ushort ModificarDirecaoDeMovimento(EDirecaoAngulo direcaoAngulo) => ModificarDirecaoDeMovimento(direcaoAngulo, 5);
     }
 }
