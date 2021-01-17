@@ -1,4 +1,4 @@
-namespace DroneExploracao
+namespace DroneExploracao.Enums
 {
     public enum EDirecaoAngulo
     {

@@ -1,13 +1,16 @@
 using System;
+using DroneExploracao.Enums;
 
 namespace DroneExploracao
 {
     public abstract class DroneBase
     {
-        protected DroneBase(float alturaMaximaDeVoo, float alturaMinimaDeVoo)
+        protected DroneBase(float alturaMaximaDeVoo, float alturaMinimaDeVoo, float velocidadeMaximaDeMovimento, float velocidadeMinimaDeMovimento)
         {
             AlturaMaximaDeVoo = alturaMaximaDeVoo;
             AlturaMinimaDeVoo = alturaMinimaDeVoo;
+            VelocidadeMaximaDeMovimento = velocidadeMaximaDeMovimento;
+            VelocidadeMinimaDeMovimento = velocidadeMinimaDeMovimento;
         }
 
         public float AlturaDeVoo { get; private set; }
@@ -19,7 +22,14 @@ namespace DroneExploracao
         public ushort DirecaoDeMovimento { get; private set; }
 
         private static readonly ushort AnguloMaximo = 360;
+        
         private static readonly ushort AnguloMinimo = 0;
+
+        public float VelocidadeDeMovimento { get; private set; }
+
+        private float VelocidadeMaximaDeMovimento { get; set; }
+
+        private float VelocidadeMinimaDeMovimento { get; set; }
         
         public virtual float ModificarAlturaDeVoo(EAltura alturaDirecao, float valor)
         {
@@ -28,15 +38,26 @@ namespace DroneExploracao
             else
                 AlturaDeVoo -= valor;
 
-            if(AlturaDeVoo > AlturaMaximaDeVoo)
-                AlturaDeVoo = AlturaMaximaDeVoo;
-            else if (AlturaDeVoo < AlturaMinimaDeVoo)
-                AlturaDeVoo = AlturaMinimaDeVoo;
+            AlturaDeVoo = ValidarAlturaDeVoo(AlturaDeVoo);
 
             return AlturaDeVoo;
         }
 
-        public virtual float ModificarAlturaDeVoo(float valor) => ModificarAlturaDeVoo(EAltura.Aumentar, valor);
+        public virtual float ModificarAlturaDeVoo(float valor)
+        {
+            AlturaDeVoo = ValidarAlturaDeVoo(valor);
+            return AlturaDeVoo;
+        }
+
+        private float ValidarAlturaDeVoo(float valor)
+        {
+            if(valor > AlturaMaximaDeVoo)
+                valor = AlturaMaximaDeVoo;
+            else if (valor < AlturaMinimaDeVoo)
+                valor = AlturaMinimaDeVoo;
+
+            return valor;
+        }
 
         private void ValidarAngulo(ushort angulo)
         {
@@ -79,6 +100,34 @@ namespace DroneExploracao
             }
 
             return Convert.ToUInt16(angulo);
+        }
+
+        public virtual float ModificarVelocidadeDeMovimento(EVelocidade velocidadeStatus, float valor)
+        {
+            if(velocidadeStatus == EVelocidade.Aumentar)
+                VelocidadeDeMovimento += valor;
+            else
+                VelocidadeDeMovimento -= valor;
+
+            VelocidadeDeMovimento = ValidarVelocidadeDeMovimento(VelocidadeDeMovimento);
+
+            return VelocidadeDeMovimento;
+        }
+
+        public virtual float ModificarVelocidadeDeMovimento(float valor)
+        {
+            VelocidadeDeMovimento = ValidarVelocidadeDeMovimento(valor);
+            return VelocidadeDeMovimento;
+        }
+
+        private float ValidarVelocidadeDeMovimento(float valor)
+        {
+            if(valor > VelocidadeMaximaDeMovimento)
+                valor = VelocidadeMaximaDeMovimento;
+            else if (valor < VelocidadeMinimaDeMovimento)
+                valor = VelocidadeMinimaDeMovimento;
+
+            return valor;
         }
     }
 }
