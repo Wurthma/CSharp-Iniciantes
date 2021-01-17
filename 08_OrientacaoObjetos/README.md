@@ -42,10 +42,13 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 	- Usuário deve ser capaz de mudar a direção do drone progressivamente, onde cada comando muda a direção para esquerda ou direita em 5º.
 		- Exemplo 1: se atualmente o drone está na direção 100º, ao usar o comando para ir para esquerda progressivamente, a direção deve mudar para 95º.
 		- Exemplo 2: se atualmente o drone está na direção 100º, ao usar o comando para ir para direita progressivamente, a direção deve mudar para 105º.
+		- Exemplo 3: se atualmente o drone está na direção 2º, ao usar o comando para ir para esquerda progressivamente, a direção deve mudar para 357º.
+		- Exemplo 4: se atualmente o drone está na direção 359º, ao usar o comando para ir para direita progressivamente, a direção deve mudar para 4º.
 		
 - **Velocidade de movimento:**
-	-Regra: velocidade máxima de movimento deve ser 15 metros por segundos (estado "Em movimento").
-	-Regra: velocidade mínima de movimento deve ser 0 metros por segundos, onde o drone ficará no estado "Sem movimento".
+	- Regra: velocidade máxima de movimento deve ser 15 metros por segundos (estado "Em movimento" para qualquer valor acima de 0).
+	- Regra: velocidade mínima de movimento deve ser 0 metros por segundos, onde o drone ficará no estado "Sem movimento".
+	- Usuário deve ser capaz de mudar a velocidade do drone progressivamente, onde cada comando muda aumenta ou diminui a velocidade de 0,5 em 0,5 metro/s.
 
 - **Aproximação de objeto:**
 	- Regra: *aproximação de objeto* só pode ser realizada após estar à 0,5 metros do chão e parado (0 metro/s);
