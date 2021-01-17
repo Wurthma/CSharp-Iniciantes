@@ -51,7 +51,7 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 	- Usuário deve ser capaz de mudar a velocidade do drone progressivamente, onde cada comando muda aumenta ou diminui a velocidade de 0,5 em 0,5 metro/s.
 
 - **Aproximação de objeto:**
-	- Regra: *aproximação de objeto* só pode ser realizada após estar à 0,5 metros do chão e parado (0 metro/s);
+	- Regra: *aproximação de objeto* só pode ser realizada após estar parado (0 metro/s);
 	- *Aproximação de objeto* deverá ser um comando dado ao drone que aproximara ele lentamente até determinado objeto, com o objetivo de ficar no alcance dos braços mecânicos.
 	- Após realizar a *apróximação de objeto* o drone deve ficar impedido de fazer nova aproximação, ou mudança de altura, direção e deve estar parado (0 metro/s).
 	
