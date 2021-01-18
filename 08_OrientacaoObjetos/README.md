@@ -69,17 +69,17 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 			2. Rotação negativa a cada -5º
 			3. Rotação para ângulo específico informado pelo usuário de 0º a 360º
 		- Ferramentas do braço esquerdo
-			1. Pegar (pinça para manipular objetos)
-			2. Armazenar (leva objeto até recipiente de armazenamento)
-			3. Bater (martelo pequeno para quebrar rochas e outros objetos para coleta)
+			1. Pegar: só pode ser utilizada se o cotovelo estiver contraído. (pinça para manipular objetos)
+			2. Armazenar: só pode ser utilizada se o cotovelo estiver Em repouso. (leva objeto até recipiente de armazenamento)
+			3. Bater: só pode ser utilizada se o cotovelo estiver contraído. (martelo pequeno para quebrar rochas e outros objetos para coleta)
 	- **Braço Direito:**
 		- Cotovelo (mesmas ações do braço esquerdo)
 		- Pulso (mesmas ações do braço esquerdo)
 		- Ferramentas do braço direito
 			1. Pegar (mesma do braço esquerdo)
 			2. Armazenar (mesma braço esquerdo)
-			3. Cortar (tesoura para cortar objetos)
-			4. Coletar (pá/colher utilizado para objetos não sólidos)
+			3. Cortar: só pode ser utilizada se o cotovelo estiver contraído. (tesoura para cortar objetos)
+			4. Coletar: só pode ser utilizada se o cotovelo estiver Em Repouso. (pá/colher utilizado para objetos não sólidos)
 
 **Opcional**
 - Fazer o controle de versionamento da sua aplicação usando git;
