@@ -3,7 +3,7 @@ using DroneExploracao.Enums;
 
 namespace DroneExploracao
 {
-    public abstract class DroneBase
+    public abstract class DroneBase : AnguloRotacao
     {
         protected DroneBase(float alturaMaximaDeVoo, float alturaMinimaDeVoo, float velocidadeMaximaDeMovimento, float velocidadeMinimaDeMovimento)
         {
@@ -21,15 +21,13 @@ namespace DroneExploracao
 
         public ushort DirecaoDeMovimento { get; private set; }
 
-        private static readonly ushort AnguloMaximo = 360;
-        
-        private static readonly ushort AnguloMinimo = 0;
-
         public float VelocidadeDeMovimento { get; private set; }
 
         private float VelocidadeMaximaDeMovimento { get; set; }
 
         private float VelocidadeMinimaDeMovimento { get; set; }
+
+        public bool AproximadoDeObjeto { get; private set; }
         
         public virtual float ModificarAlturaDeVoo(EAltura alturaDirecao, float valor)
         {
@@ -58,12 +56,6 @@ namespace DroneExploracao
 
             return valor;
         }
-
-        private void ValidarAngulo(ushort angulo)
-        {
-            if(angulo > AnguloMaximo || angulo < AnguloMinimo)
-                throw new ArgumentException("Valor do ângulo deve estar entre 0 e 360.");
-        }
         
         public virtual ushort ModificarDirecaoDeMovimento(ushort angulo)
         {
@@ -77,29 +69,8 @@ namespace DroneExploracao
         public virtual ushort ModificarDirecaoDeMovimento(EDirecaoAngulo direcaoAngulo, ushort angulo)
         {
             ValidarAngulo(angulo);
-            DirecaoDeMovimento = CalcularAnguloDirecaoAtual(direcaoAngulo, angulo);
+            DirecaoDeMovimento = CalcularAngulo(direcaoAngulo, DirecaoDeMovimento, angulo);
             return DirecaoDeMovimento;
-        }
-
-        private ushort CalcularAnguloDirecaoAtual(EDirecaoAngulo direcaoAngulo, ushort valorAlteracaoAngulo)
-        {
-            int angulo = DirecaoDeMovimento;
-            if(direcaoAngulo == EDirecaoAngulo.Positivo)
-            {
-                angulo += valorAlteracaoAngulo;
-
-                if(angulo - AnguloMaximo > 0)
-                    angulo -= AnguloMaximo;
-            }
-            else
-            {
-                angulo -= valorAlteracaoAngulo;
-
-                if(angulo < 0)
-                    angulo += AnguloMaximo;
-            }
-
-            return Convert.ToUInt16(angulo);
         }
 
         public virtual float ModificarVelocidadeDeMovimento(EVelocidade velocidadeStatus, float valor)
@@ -128,6 +99,19 @@ namespace DroneExploracao
                 valor = VelocidadeMinimaDeMovimento;
 
             return valor;
+        }
+
+        public bool AproximarDeObjeto()
+        {
+            if(VelocidadeDeMovimento == 0)
+                AproximadoDeObjeto = true;
+
+            return AproximadoDeObjeto;
+        }
+
+        public void DistanciarDeObjeto()
+        {
+            AproximadoDeObjeto = false;
         }
     }
 }
