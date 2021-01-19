@@ -57,8 +57,9 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 	- Estando próximo de um objeto o Drone deve ser capaz de se distanciar desse mesmo objeto para voltar as suas funções normais.
 	
 - **Ações dos braços**
-	- Regra: Os braços do drone, quando "em movimento" devem estar no estado "Repouso"
-	- Regra: Os braços do drone, quando "sem movimento" podem passar para o estado "Em atividade"
+	- Regra: Os braços do drone, só podem ser utilizados após realizar "aproximação de objeto".
+	- Regra: Os braços do drone, quando "em movimento" devem estar no estado "Repouso".
+	- Regra: Os braços do drone, quando "sem movimento" podem passar para o estado "Em atividade".
 	- Regra: Qualquer movimento do braço só pode ser realizado quando ele estiver "Em atividade".
 	- Regra: o braço não pode ficar "Em repouso" se estiver no etado "Ocupado".
 	- **Braço Esquerdo:**
