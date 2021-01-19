@@ -54,11 +54,14 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 	- Regra: *aproximação de objeto* só pode ser realizada após estar parado (0 metro/s);
 	- *Aproximação de objeto* deverá ser um comando dado ao drone que aproximara ele lentamente até determinado objeto, com o objetivo de ficar no alcance dos braços mecânicos.
 	- Após realizar a *apróximação de objeto* o drone deve ficar impedido de fazer nova aproximação, ou mudança de altura, direção e deve estar parado (0 metro/s).
+	- Estando próximo de um objeto o Drone deve ser capaz de se distanciar desse mesmo objeto para voltar as suas funções normais.
 	
 - **Ações dos braços**
-	- Regra: Os braços do drone, quando "em movimento" devem estar no estado "Repouso"
-	- Regra: Os braços do drone, quando "sem movimento" podem passar para o estado "Em atividade"
+	- Regra: Os braços do drone, só podem ser utilizados após realizar "aproximação de objeto".
+	- Regra: Os braços do drone, quando "em movimento" devem estar no estado "Repouso".
+	- Regra: Os braços do drone, quando "sem movimento" podem passar para o estado "Em atividade".
 	- Regra: Qualquer movimento do braço só pode ser realizado quando ele estiver "Em atividade".
+	- Regra: o braço não pode ficar "Em repouso" se estiver no etado "Ocupado".
 	- **Braço Esquerdo:**
 		- Cotovelo
 			1. Em Repouso
@@ -68,17 +71,20 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 			2. Rotação negativa a cada -5º
 			3. Rotação para ângulo específico informado pelo usuário de 0º a 360º
 		- Ferramentas do braço esquerdo
-			1. Pegar (pinça para manipular objetos)
-			2. Armazenar (leva objeto até recipiente de armazenamento)
-			3. Bater (martelo pequeno para quebrar rochas e outros objetos para coleta)
+			1. Pegar: só pode ser utilizada se o cotovelo estiver contraído. (pinça para manipular objetos)
+				- Regra: Ao pegar um objeto o braço deve ficara em um estado de "Ocupado" e só sairá desse estado depois de armazenar.
+			2. Armazenar: só pode ser utilizada se o cotovelo estiver Em repouso. (leva objeto até recipiente de armazenamento)
+			3. Bater: só pode ser utilizada se o cotovelo estiver contraído e braço desocupado. (martelo pequeno para quebrar rochas e outros objetos para coleta)
 	- **Braço Direito:**
 		- Cotovelo (mesmas ações do braço esquerdo)
 		- Pulso (mesmas ações do braço esquerdo)
 		- Ferramentas do braço direito
 			1. Pegar (mesma do braço esquerdo)
+				- Regra: Ao pegar um objeto o braço deve ficara em um estado de "Ocupado" e só sairá desse estado depois de armazenar.
 			2. Armazenar (mesma braço esquerdo)
-			3. Cortar (tesoura para cortar objetos)
-			4. Coletar (pá/colher utilizado para objetos não sólidos)
+			3. Cortar: só pode ser utilizada se o cotovelo estiver contraído e braço desocupado. (tesoura para cortar objetos)
+			4. Coletar: só pode ser utilizada se o cotovelo estiver Em Repouso e braço desocupado. (pá/colher utilizado para objetos não sólidos)
+				- Regra: Ao coletar alguma substância o braço deve ficar em um estado de "Ocupado" e só sairá desse estado depois de armazenar.
 
 **Opcional**
 - Fazer o controle de versionamento da sua aplicação usando git;
