@@ -92,4 +92,4 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 
 # Desafios
 
-1. Crie novas funções para seu drone que permitam ao usuário controlar a câmera de alta resolução. Leve em consideração que a câmera pode fazer rotações horizontais e verticais e capturar foto ou vídeo.
+1. Crie funções para seu drone que permitam ao usuário controlar a câmera de alta resolução. Leve em consideração que a câmera pode fazer rotações horizontais e verticais e capturar foto ou vídeo.
