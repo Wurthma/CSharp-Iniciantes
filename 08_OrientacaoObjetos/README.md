@@ -53,7 +53,7 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 - **Aproximação de objeto:**
 	- Regra: *aproximação de objeto* só pode ser realizada após estar parado (0 metro/s);
 	- *Aproximação de objeto* deverá ser um comando dado ao drone que aproximara ele lentamente até determinado objeto, com o objetivo de ficar no alcance dos braços mecânicos.
-	- Após realizar a *apróximação de objeto* o drone deve ficar impedido de fazer nova aproximação, ou mudança de altura, direção e deve estar parado (0 metro/s).
+	- Após realizar a *aproximação de objeto* o drone deve ficar impedido de fazer nova aproximação, ou mudança de altura, direção e deve estar parado (0 metro/s).
 	- Estando próximo de um objeto o Drone deve ser capaz de se distanciar desse mesmo objeto para voltar as suas funções normais.
 	
 - **Ações dos braços**
