@@ -61,7 +61,7 @@ Para aprender esses pilares você precisa dominar alguns conceitos básicos do C
 	- Regra: Os braços do drone, quando "em movimento" devem estar no estado "Repouso".
 	- Regra: Os braços do drone, quando "sem movimento" podem passar para o estado "Em atividade".
 	- Regra: Qualquer movimento do braço só pode ser realizado quando ele estiver "Em atividade".
-	- Regra: o braço não pode ficar "Em repouso" se estiver no etado "Ocupado".
+	- Regra: o braço não pode ficar "Em repouso" se estiver no estado "Ocupado".
 	- **Braço Esquerdo:**
 		- Cotovelo
 			1. Em Repouso
