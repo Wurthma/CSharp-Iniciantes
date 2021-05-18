@@ -63,7 +63,7 @@ Usando git é importante sempre configurarmos o arquivo **.gitignore** do nosso 
 ###### Siga os passos abaixo para criarmos um gitignore para nosso projeto:
 
 1. Pelo "Explorer" do VS Code crie um arquivo na raiz do nosso projeto "ControleDeVersaoComGit" com o nome .gitignore
-2. Coloque [este conteúdo](https://github.com/Wurthma/HackerHankExercises/blob/master/.gitignore "este conteúdo") no arquivo criado.
+2. Coloque [este conteúdo](https://github.com/Wurthma/HackerHankExercises/blob/master/.gitignore "este conteúdo") no arquivo criado. (você pode usar também o comando `dotnet new gitignore`)
 3. Salve o arquivo e você terá menos arquivos na notificação do "Source Control".
 
 
