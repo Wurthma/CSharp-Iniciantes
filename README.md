@@ -1,9 +1,11 @@
 ### Lista de exercícios práticos em C Sharp
 
-Este repositório possui uma lista de exercícios práticos a serem desenvolvidos em C#. Fique a vontade para usar estes exercícios como bem entender.
-Cada pasta desse repositório possui um exercício organizado por nível, sendo o primeiro exercício o mais básico e o último o mais avançado. No entanto, um exercício não é dependente do outro, caso você já possua conhecimentos em lógica de programação e C# poderá decidir por qual começar.
+Este repositório possui uma lista de exercícios práticos a serem desenvolvidos em C# que uso durante minha tutorias. Fique a vontade para usar estes exercícios.
+Cada pasta desse repositório possui um exercício organizado por nível de dificuldade, sendo o primeiro exercício o mais básico e o último o mais avançado. No entanto, um exercício não é dependente do outro, caso você já possua conhecimentos em lógica de programação e C# poderá decidir por qual começar.
 
-**Nota:** não é objetivo dos exercícios uma abordagem detalhada de cada assunto, aqui você possivelmente encontrará um facilitador para você por a mão na massa e dar um caminho um pouco mais simplificado de qual assunto estudar de for progressiva.
+**Nota:** não é objetivo dos exercícios uma abordagem detalhada de cada assunto, aqui você possivelmente encontrará um facilitador para você por a mão na massa e dar um caminho um pouco mais simplificado de qual assunto estudar de forma progressiva (pelo menos foi o que tentei fazer).
+
+**Nota2:** apenas os exercícios aqui propostos provavelmente não é o suficiente pra você fixar todos os pontos abordados, procure por mais conteúdos para fixar os conceitos.
 
 ## Requisitos básicos para fazer os exercícios
 
