@@ -1,6 +1,7 @@
 ### Orientação a Objetos - Drone de Exploração
 
 **Objetivo:** aprender conceitos de **orientação a objetos (OO)**.
+
 Nos requisitos para fazer os exercícios foi solicitado que você já conhecesse os conceitos de orientação a objetos e aqui você não terá um livro onde aprenderá tudo sobre OO, nosso objetivo maior é pôr em prática esses conceitos no C#. Se não conhece sobre OO, não desanime, leia artigos, livros, assista vídeos, faça cursos etc. Conteúdo sobre o assunto não falta!
 Para atingir esse objetivo, a aplicação que vamos utilizar simula o controle de um drone robô.
 
