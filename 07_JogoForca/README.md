@@ -40,7 +40,7 @@ Caso não conheça os conceitos de orientação a objetos, pause um pouco a exec
 - Subir a aplicação para um repositório do github.
 - Faça o uso de todos os pilares da programação Orientada a Objetos.
 - Utilize Enumeradores para a categoria das palavras.
-- Estude o tratamento de errors com C# (Exceptions).
+- Estude o tratamento de erros com C# (Exceptions).
 - Estude a biblioteca System.Linq; para facilitar sua manipulação de listas.
 
 # Desafios
