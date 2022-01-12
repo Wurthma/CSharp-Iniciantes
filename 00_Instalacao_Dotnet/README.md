@@ -1,6 +1,6 @@
 ### Instalação do Dotnet
 
-Nesse exercício iremos apenas preparar o ambiente com a instalação do Dotnet mais recenete e aprender o básico dos seus comandos.
+Nesse exercício iremos apenas preparar o ambiente com a instalação do Dotnet mais recente e aprender o básico dos seus comandos.
 Para desenvolver com dotnet você precisa baixar o SDK.
 Para baixar a versão mais atual do Dotnet acesse o link: https://dotnet.microsoft.com/download
 
