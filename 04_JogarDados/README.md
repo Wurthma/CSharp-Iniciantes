@@ -1,6 +1,6 @@
 ### Jogar dados
 
-**Objetivo:** usando uma aplicação do tipo console do dotnet, criar um jogo simplificado onde dois jogadores podem jogar dados e a aplicação informá qual dos jogadores tirou o maior número.Faça o controle de versionamento da sua aplicação com git e suba a mesma para o github.
+**Objetivo:** usando uma aplicação do tipo console do dotnet, criar um jogo simplificado onde dois jogadores podem jogar dados e a aplicação informa qual dos jogadores tirou o maior número. Faça o controle de versionamento da sua aplicação com git e suba a mesma para o github.
 
 ## Novos conceitos ou funcionalidades desse exercício
 
