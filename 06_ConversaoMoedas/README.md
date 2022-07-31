@@ -1,6 +1,6 @@
 ### Conversão de Moedas
 
-**Objetivo:** usando uma aplicação do tipo console do dotnet, criar uma aplicação que converterá o real (R$) para as moedas dólar ($), euro (€), iene (¥) e libra esterlina (£).
+**Objetivo:** usando uma aplicação do tipo console do dotnet, criar uma aplicação que converterá o real ( R$ ) para as moedas dólar ( $ ), euro ( € ), iene ( ¥ ) e libra esterlina ( £ ).
 
 **Legenda**
 - Real: moeda brasileira
