@@ -32,10 +32,10 @@ Lembre-se de utilizar os conceitos já utilizados nos exercícios anteriores.
 - Após leitura do valor a ser convertido, exibir um menu para selecionar para qual moeda o usuário deseja converter: dólar ($), euro (€), iene (¥) ou libra esterlina (£).
 
 - Para realizar a conversão utilize os valore fictícios abaixo:
-	- dólar ($) = R$ 4,50
-	- euro (€) = R$ 6,20
-	- iene (¥) = R$ 0,052
-	- libra (£) = R$ 6,95
+	- dólar ( $ ) = R$ 4,50
+	- euro ( € ) = R$ 6,20
+	- iene ( ¥ ) = R$ 0,052
+	- libra ( £ ) = R$ 6,95
 
 **Opcional**
 - Fazer o controle de versionamento da sua aplicação usando git;
