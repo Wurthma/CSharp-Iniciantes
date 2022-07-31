@@ -44,5 +44,5 @@ Lembre-se de utilizar os conceitos já utilizados nos exercícios anteriores.
 
 # Desafios
 
-1. Crie na sua aplicação a opção de converter as moedas dólar ($), euro (€), iene (¥) e libra esterlina (£) em real (R$).
+1. Crie na sua aplicação a opção de converter as moedas dólar ( $ ), euro ( € ), iene ( ¥ ) e libra esterlina ( £ ) em real ( R$ ).
 2. Permita que o usuário informe qualquer uma das moedas (real , dólar, euro, iene ou libra esterlina) e depois converta pra qualquer uma das opções restantes.
