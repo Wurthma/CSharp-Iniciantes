@@ -1,11 +1,11 @@
 ### Lista de exercícios práticos em C Sharp
 
-Este repositório possui uma lista de exercícios práticos a serem desenvolvidos em C# que uso durante minha tutorias. Fique a vontade para usar estes exercícios.
+Este repositório possui uma lista de exercícios práticos a serem desenvolvidos em C# que uso durante minhas tutorias. Fique a vontade para usar estes exercícios.
 Cada pasta desse repositório possui um exercício organizado por nível de dificuldade, sendo o primeiro exercício o mais básico e o último o mais avançado. No entanto, um exercício não é dependente do outro, caso você já possua conhecimentos em lógica de programação e C# poderá decidir por qual começar.
 
-**Nota:** não é objetivo dos exercícios uma abordagem detalhada de cada assunto, aqui você possivelmente encontrará um facilitador para você por a mão na massa e dar um caminho um pouco mais simplificado de qual assunto estudar de forma progressiva (pelo menos foi o que tentei fazer).
+**Nota:** não é objetivo dos exercícios uma abordagem detalhada de cada assunto, aqui você possivelmente encontrará um facilitador para por a mão na massa e dar um caminho um pouco mais simplificado de qual assunto estudar de forma progressiva (pelo menos foi o que tentei fazer).
 
-**Nota2:** apenas os exercícios aqui propostos provavelmente não é o suficiente pra você fixar todos os pontos abordados, procure por mais conteúdos para fixar os conceitos.
+**Nota2:** apenas os exercícios aqui propostos não são suficientes pra você fixar todos os pontos abordados, procure por mais conteúdos para fixar os conceitos.
 
 ## Requisitos básicos para fazer os exercícios
 
@@ -14,13 +14,12 @@ Sugiro que você já conheça de forma básica:
 - Lógica de programação;
 - Algoritmos;
 - Conceitos de orientação a objetos;
-- SQL e bancos de dados relacionais;
 
 *Os itens acima não são necessários pra todos exercícios.*
 
 ## Evolução dos exercícios
 
-Apenas os primeiros exercícios fazem uma abordagem mais detalhada para que vocês configurem o ambiente e aprendam a usar o básico de Dotnet, VS Code, Git e Github (exercício 0 e 1). O restante dos exercícios são "hands on", vocês terão acesso aos requisitos de uma aplicação e deverão desenvolve-la, após isso podem comparar com a aplicação de exemplo pronta no repositório ou, se for necessário, podem consultar caso fiquem "travados" em algum ponto do exercício.
+Os primeiros exercícios fazem uma abordagem mais detalhada para que vocês configurem o ambiente e aprendam a usar o básico de Dotnet, VS Code, Git e Github (exercício 0 e 1). O restante dos exercícios são "hands on", vocês terão acesso aos requisitos de uma aplicação e deverão desenvolve-la, após isso podem comparar com a aplicação de exemplo pronta no repositório ou, se for necessário, podem consultar caso fiquem "travados" em algum ponto do exercício.
 Tentei deixar uma evolução fluída para os exercícios, com uma progressão em que você possa estudar conceitos ou funcionalidades novas conforme avança. Os exercícios possuem alguns desafios para você praticar mais, se desejar, mas nem todos exemplos tem os desafios para consulta, o intuito é fazer você criar suas próprias soluções.
 
 # Lista de exercícios:

@@ -32,7 +32,10 @@ Neste ponto você aprenderá os comandos básicos de git para fazer o controle d
 
 Para seguir com os exemplos práticos de git, baixe-o no link: https://git-scm.com/downloads 
 
-Após instalação do git, antes de usá-lo é necessário configurar um nome de usuário e um e-mail usando os comandos abaixo:
+Após instalação do git, use o comando abaixo no terminal para verificar se o mesmo foi instalado corretamente:
+`git --version`
+
+Antes de usá-lo é necessário configurar um nome de usuário e um e-mail usando os comandos abaixo no terminal:
 `git config --global user.name "Seu Nome"`
 `git config --global user.email "seu_email@example.com"`
 
@@ -58,13 +61,20 @@ Criaremos um projeto simples em C# e faremos o controle de versão desse projeto
 
 #### Configurando o .gitignore
 
-Usando git é importante sempre configurarmos o arquivo **.gitignore** do nosso projeto antes do primeiro commit (que será explicado na próxima etapa). Esse arquivo informa quais arquivos o git pode ignorar do projeto, pois quando estamos trabalhando em um projeto de software, muitos arquivos são apenas temporários ou gerados durante a compilação ou logs e não precisam ser controlados pelo git.
+Usando git é importante sempre configurarmos o arquivo **.gitignore** do nosso projeto antes do primeiro commit (que será explicado na próxima etapa). Esse arquivo informa quais arquivos o git pode ignorar do projeto, pois, quando estamos trabalhando em um projeto de software, muitos arquivos são apenas temporários, gerados durante a compilação ou logs e não precisam ser controlados pelo git.
 
 ###### Siga os passos abaixo para criarmos um gitignore para nosso projeto:
 
+O próprio CLI do dotnet gera o arquivo .gitignore com os principais arquivos de um projeto dotnet a serem ignorados. Para isso basta executar o comando abaixo na pasta do projeto:
+
+`dotnet new gitignore`
+
+Ou, se preferir, pode cria-lo manualmente seguindo os passos abaixo:
+
 1. Pelo "Explorer" do VS Code crie um arquivo na raiz do nosso projeto "ControleDeVersaoComGit" com o nome .gitignore
-2. Coloque [este conteúdo](https://github.com/Wurthma/HackerHankExercises/blob/master/.gitignore "este conteúdo") no arquivo criado. (você pode usar também o comando `dotnet new gitignore`)
-3. Salve o arquivo e você terá menos arquivos na notificação do "Source Control".
+2. Coloque os arquivos e pastas que deseja ignorar dentro do arquivo criado e salve-o.
+
+Após a criação do .gitignore você terá menos arquivos na notificação do "Source Control".
 
 
 #### Commit
@@ -79,8 +89,8 @@ Após garantir que sua aplicação está funcionando, siga os passos abaixo para
 1. Use o comando `git status` para vermos a situação atual do nosso repositório. Tente entender o retorno do git.
     Note que o git mostra os arquivos que não estão sendo ainda rastreados por ele, esses arquivos precisam ser adicionados ao git, como ele mesmo informa.
 2. Para adicionar todos os arquivos listados use o comando `git add .`
-3. Use novamente o comando `git status` e agora os arquivos foram adicionados ao git.
-4. Use o comando `git commit -m "Meu primeiro commit"` para confirmar as alterações do projeto.
+3. Use novamente o comando `git status` e agora podemos ver os arquivos que foram adicionados ao git.
+4. Use o comando `git commit -m "Meu primeiro commit"` para confirmar as alterações do projeto com uma mensagem simples do que fizemos nesse commit.
 5. Se rodarmos novamente o `git status` veremos que não temos mais modificações no projeto. E no "Source Control" do VS Code também não temos mais alterações notificadas.
 6. Modifique o arquivo "Program.cs" do seu projeto, vamos adicionar uma linha nova a ele imprimindo a data de hoje. A linha deve ficar abaixo do "Hello World!":
 	```csharp
@@ -110,8 +120,8 @@ Para subirmos o nosso projeto para o github, no repositório que acabamos de cri
     A url você pode pegar assim que criar seu repositório, será algo parecido com o exemplo grifado na imagem abaixo:
     ![Github repo URL](../Resources/Imgs/01_Github_repo_url.png)
 
-2. Agora vamos realizar o push: `git push --set-upstream ControleDeVersaoComGit master`
-    O comando acima indica que estamos fazendo um push para o repositório com nome "ControleDeVersaoComGit" na branch "master"
+2. Agora vamos realizar o push: `git push --set-upstream ControleDeVersaoComGit main`
+    O comando acima indica que estamos fazendo um push para o repositório com nome "ControleDeVersaoComGit" na branch "main"
 
 3. Atualize seu repositório no github e poderá ver agora todos os arquivos que estavam até então apenas na máquina local.
 
@@ -151,14 +161,14 @@ Você pode criar novas branchs em seus repositórios usando o comando `git branc
     ![Github create branch](../Resources/Imgs/01_Github_create_branch.png)
 
 Você pode definir como será a divisão das suas branchs, abaixo segue um exemplo:
-- master (Branch principal, onde só serão aplicadas as alterações que já passaram por testes e já podem subir para produção)
+- main (Branch principal, onde só serão aplicadas as alterações que já passaram por testes e já podem subir para produção)
 - develop (Branch onde todos os desenvolvimentos serão aplicados para posteriormente ir para teste)
 
 #### Merge
 
 *(Merge é abordado de forma simplificada, não será necessário para realizar os exercícios)*
 
-É comum, durante um projeto real, antes de iniciar a alteração você tirar uma branch sua da develop, e quando você termina todas as alterações/desenvolvimento você faz o "merge" das alterações para a develop. Isso é seguido por todo o time e durante o merge é necessário verificar se houve conflitos (se outros desenvolvedores do time alteraram os mesmos trechos que você alterou).
+É comum, durante um projeto real, antes de iniciar a alteração, você tirar uma branch sua da develop, e quando você terminar todas as alterações no projeto você faz o "merge" das alterações para a develop. Isso é seguido por todo o time e durante o merge é necessário verificar se houve conflitos (se outros desenvolvedores do time alteraram os mesmos trechos que você alterou).
 
 Existem ferramentas específicas que facilitam a visualização do merge, o próprio VS Code pode ser utilizado para isso. Mas é possível fazê-lo com o comando `git merge`.
 
